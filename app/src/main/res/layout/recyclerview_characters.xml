@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="10dp"
+    android:padding="2dp"
+    app:cardBackgroundColor="@color/black">
+
+    <LinearLayout
+        android:id="@+id/charactersLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/chImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="Imagen Personaje"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/txtCharacterName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Personaje"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#992200"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
