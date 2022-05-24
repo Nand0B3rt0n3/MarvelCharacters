@@ -9,6 +9,10 @@ class MarvelRepositoryImpl @Inject constructor(
     private val api:MarvelApi
 ):MarvelRepository{
     override suspend fun getAllCharacter(offset: Int): CharactersDTO {
-        return api.getAllChatacters(offset = offset.toString())
+        return api.getAllCharacters(offset = offset.toString())
+    }
+
+    override suspend fun getAllSearchedCharacters(search: String): CharactersDTO {
+        return api.getAllSearchedCharacters(search = search)
     }
 }

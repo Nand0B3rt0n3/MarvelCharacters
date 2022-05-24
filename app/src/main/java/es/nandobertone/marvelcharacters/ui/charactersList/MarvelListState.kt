@@ -1,4 +1,4 @@
-package es.nandobertone.marvelcharacters.ui.CharactersList
+package es.nandobertone.marvelcharacters.ui.charactersList
 
 import es.nandobertone.marvelcharacters.domain.model.Character
 
